@@ -1,0 +1,124 @@
+/* assets/custom.css - Dark Theme */
+
+/* Base Style */
+body {
+    font-family: "Inter", "Segoe UI", sans-serif;
+    background-color: #121212 !important;
+    color: #e5e5e5 !important;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #f1f3f5 !important;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+h4, h5, h6 {
+    color: #e5e5e5 !important;
+    font-weight: 600;
+}
+
+/* Info boxes */
+.stAlert {
+    border-radius: 10px;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #1e88e5 !important;
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.stButton > button:hover {
+    background-color: #1565c0 !important;
+    transform: scale(1.02);
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #1f1f1f !important;
+    color: #e5e5e5 !important;
+    border-right: 1px solid #2e2e2e;
+}
+
+/* Download buttons */
+.stDownloadButton > button {
+    background-color: #43a047 !important;
+    color: #fff !important;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border: none;
+}
+
+.stDownloadButton > button:hover {
+    background-color: #2e7d32 !important;
+    transform: scale(1.02);
+}
+
+/* Expander box */
+details > summary {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #4dabf7 !important;
+    cursor: pointer;
+}
+
+/* AgGrid Enhancements */
+.ag-theme-streamlit,
+.ag-theme-streamlit-dark {
+    font-family: "Inter", sans-serif !important;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    background-color: #1e1e1e !important;
+    color: #e5e5e5 !important;
+}
+
+.ag-header {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+}
+
+.ag-cell {
+    background-color: #1e1e1e !important;
+    color: #e5e5e5 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1f1f1f;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #3b3b3b;
+    border-radius: 6px;
+}
+
+/* Ripple effect for cells */
+.ripple {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    animation: ripple-effect 0.6s linear;
+    transform: scale(0);
+}
+
+@keyframes ripple-effect {
+    to {
+        transform: scale(8);
+        opacity: 0;
+    }
+}
