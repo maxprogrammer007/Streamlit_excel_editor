@@ -9,13 +9,13 @@ st.set_page_config(page_title="📊 Streamlit Data Editor", layout="wide")
 
 # --- Theme Selection ---
 theme = st.sidebar.radio("🌗 Theme", ["Light", "Dark"])
-theme_file = "C:\\Users\\abhin\\OneDrive\\Documents\\GitHub\\Streamlit_excel_editor\\streamlit_csv_editor\\assets\\dark_theme.css" if theme == "Dark" else "C:\\Users\\abhin\\OneDrive\\Documents\\GitHub\\Streamlit_excel_editor\\streamlit_csv_editor\\assets\\custom.css"
+theme_file = "/workspaces/Streamlit_excel_editor/streamlit_csv_editor/assets/dark_theme.css" if theme == "Dark" else "/workspaces/Streamlit_excel_editor/streamlit_csv_editor/assets/custom.css"
 with open(theme_file) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # --- Load Custom JS ---
-if os.path.exists("C:\\Users\\abhin\\OneDrive\\Documents\\GitHub\\Streamlit_excel_editor\\streamlit_csv_editor\\assets\\custom.jss"):
-    with open("C:\\Users\\abhin\\OneDrive\\Documents\\GitHub\\Streamlit_excel_editor\\streamlit_csv_editor\\assets\\custom.js") as f:
+if os.path.exists("/workspaces/Streamlit_excel_editor/streamlit_csv_editor/assets/custom.js"):
+    with open("/workspaces/Streamlit_excel_editor/streamlit_csv_editor/assets/custom.js") as f:
         st.components.v1.html(f"<script>{f.read()}</script>", height=0)
 
 # --- Title ---
