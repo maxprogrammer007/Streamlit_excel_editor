@@ -9,7 +9,7 @@ st.set_page_config(page_title="📊 Streamlit Data Editor", layout="wide")
 
 # --- Theme Selection ---
 theme = st.sidebar.radio("🌗 Theme", ["Light", "Dark"])
-theme_file = "streamlit_csv_editor/assets/dark_theme.js" if theme == "Dark" else "streamlit_csv_editor/assets/custom.css"
+theme_file = "streamlit_csv_editor/assets/dark_theme.css" if theme == "Dark" else "streamlit_csv_editor/assets/custom.css"
 with open(theme_file) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
