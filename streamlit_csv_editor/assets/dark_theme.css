@@ -1,0 +1,111 @@
+/* assets/dark_theme.css */
+
+/* Base */
+body {
+    background-color: #121212;
+    color: #e4e4e7;
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #f1f3f5;
+    font-weight: 700;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #1f1f1f;
+    border-right: 1px solid #2e2e2e;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.stButton > button:hover {
+    background-color: #0284c7;
+    transform: scale(1.02);
+}
+
+/* Download Button */
+.stDownloadButton > button {
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+}
+
+.stDownloadButton > button:hover {
+    background-color: #16a34a;
+}
+
+/* Expander */
+details > summary {
+    color: #0ea5e9;
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+
+/* Grid Styling */
+.ag-theme-streamlit,
+.ag-theme-streamlit-dark {
+    background-color: #1e1e1e !important;
+    color: #e5e5e5;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Table rows */
+.ag-row {
+    background-color: #1e1e1e !important;
+    border-bottom: 1px solid #2e2e2e !important;
+}
+
+/* Headers */
+.ag-header {
+    background-color: #2d2d2d !important;
+    color: #fafafa !important;
+}
+
+/* Cell hover highlight */
+.ag-cell-hover {
+    background-color: #2a2a2a !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3b3b3b;
+    border-radius: 6px;
+}
+
+hr {
+    border-top: 1px solid #2a2a2a;
+    margin: 1rem 0;
+}
+
+input, select, textarea {
+    background-color: #1f1f1f !important;
+    color: #e4e4e7 !important;
+    border: 1px solid #333 !important;
+    border-radius: 6px !important;
+}
