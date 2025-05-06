@@ -14,7 +14,7 @@ with open(theme_file) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # --- Load Custom JS ---
-if os.path.exists("C:\\Users\\abhin\\OneDrive\\Documents\\GitHub\\Streamlit_excel_editor\\streamlit_csv_editor\\assets\\custom.jss"):
+if os.path.exists("C:\\Users\\abhin\\OneDrive\\Documents\\GitHub\\Streamlit_excel_editor\\streamlit_csv_editor\\assets\\custom.js"):
     with open("C:\\Users\\abhin\\OneDrive\\Documents\\GitHub\\Streamlit_excel_editor\\streamlit_csv_editor\\assets\\custom.js") as f:
         st.components.v1.html(f"<script>{f.read()}</script>", height=0)
 
