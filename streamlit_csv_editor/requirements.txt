@@ -3,3 +3,4 @@ pandas
 openpyxl
 streamlit-aggrid
 xlsxwriter
+mysql-connector-python
